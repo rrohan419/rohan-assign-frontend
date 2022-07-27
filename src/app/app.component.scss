@@ -1,191 +1,26 @@
-.nav-link {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #000000;
-}
-
-.nav-laptop {
-    position: absolute;
-    left: 380px;
-    right: 1475px;
-    top: 6px;
-    bottom: 6px;
-    width: 65px;
-    height: 80px;
-    // font-family: 'Poppins';
-    // font-style: normal;
-    // font-weight: 600;
-    // font-size: 14px;
-    // line-height: 21px;
-    // display: flex;
-    // align-items: center;
-    // text-align: center;
-
-    // color: #000000;
-}
-
-.nav-desktop {
-    position: absolute;
-    right: 1362px;
-
-    bottom: 8px;
-    height: 80px;
-    width: 89px;
-    left: 469px;
-    top: 8px;
-    border-radius: nullpx;
-
-}
-
-.nav-networking {
-    position: absolute;
-    left: 582px;
-    right: 1197px;
-    top: 8px;
-    bottom: 8px;
-
-    height: 76px;
-    width: 141px;
-    border-radius: nullpx;
-
-}
-
-.nav-printers {
-    position: absolute;
-    left: 747px;
-    right: 1033px;
-    top: 8px;
-    bottom: 8px;
-    width: 140px;
-    height: 76px;
-}
-
-.nav-ports {
-    position: absolute;
-    height: 76px;
-    width: 63px;
-    left: 911px;
-    right: 946px;
-    top: 8px;
-    bottom: 8px;
-    border-radius: nullpx;
-
-}
-
-.nav-all-other {
-    position: absolute;
-    height: 76px;
-    width: 128px;
-    left: 998px;
-    right: 794px;
-    top: 8px;
-    bottom: 8px;
-    border-radius: nullpx;
-
-}
-
-.nav-repair {
-
-    position: absolute;
-    height: 76px;
-    width: 54px;
-    left: 1150px;
-    right: 716px;
-    top: 8px;
-    bottom: 8px;
-    border-radius: nullpx;
-
-}
-
-.navbar-brand {
-    //     height: 40.05464172363281px;
-    // width: 33.47238540649414px;
-    // left: 25.2969970703125px;
-    // top: 13.94537353515625px;
-    // border-radius: 0px;
-    position: absolute;
-    left: 277.3px;
-    right: 1598.23px;
-    top: 24.95px;
-    bottom: 27px;
-}
-
-
-
-.contact-info {
-    position: absolute;
-
-    height: 44px;
-    width: 1920px;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
-
-
+@import "src/variable.scss";
+.contact-info{
     background: #020202;
-}
-
-.contact-timing {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 18px;
+    height: 44px;
     display: flex;
     align-items: center;
 
-    position: absolute;
-    height: 27px;
-    width: 184px;
-    left: 277px;
-    top: 8px;
-    border-radius: nullpx;
-    color: white
 }
-
-.contact-number {
-    position: absolute;
-    height: 18px;
-    width: 137px;
-    left: 1506px;
-    top: 13px;
-    border-radius: nullpx;
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 18px;
-    /* identical to box height */
-
+.contact-details{
     display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #FFFFFF;
+    justify-content: space-between;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
 }
-
-.nav-bar {
-    position: absolute;
-    height: 92px;
-    width: 1920px;
-    left: 0px;
-    top: 44px;
-    border-radius: 0px;
-    background: #FFFFFF;
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
 }
-
-@media screen and(max-width: 600px) {
-    .nav-bar {
-        padding-top: 15px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid;
-        padding-left: 10px;
-    }
+.navbar-toggler {
+  font-size: 20px !important;
+  padding: 0px !important;
+  border: none;
 }
