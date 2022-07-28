@@ -1,26 +1,81 @@
 @import "src/variable.scss";
-.contact-info{
+
+.contact-info {
     background: #020202;
     height: 44px;
     display: flex;
     align-items: center;
 
 }
-.contact-details{
+
+.contact-details {
     display: flex;
     justify-content: space-between;
     color: white;
     font-size: 12px;
     font-weight: 600;
 }
+
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-  outline: none;
-  box-shadow: none;
+    outline: none;
+    box-shadow: none;
 }
+
 .navbar-toggler {
-  font-size: 20px !important;
-  padding: 0px !important;
-  border: none;
+    font-size: 20px !important;
+    padding: 0px !important;
+    border: none;
 }
+.nav-container{
+    height: 92px;
+}
+.logo {
+    width: 33.47px;
+}
+
+
+
+.nav-item {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: black;
+    margin-left: 24px;
+}
+.nav-laptop {
+    margin-left: 58.3px;
+}
+
+
+
+
+
+@media screen and(max-width: 600px) {
+    .nav-container{
+       height: auto;
+    }
+    .nav-item {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        color: black;
+        margin-left: 24px;
+        margin: auto;
+    }
+    .navbar-toggler-icon{
+        font-size: 25px;
+        
+        // width: 17px;
+        // border : 2.4px solid #020202;
+    }
+    
+    // .nav-laptop {
+    //     margin:auto;
+    // }
+   }

@@ -1,32 +1,4 @@
-// .product-header {
 
-//     font-family: 'Poppins';
-//     font-style: normal;
-//     font-weight: 600;
-//     font-size: 14px;
-//     line-height: 21px;
-//     /* identical to box height */
-
-//     position: absolute;
-//     width: 103px;
-//     height: 21px;
-//     left: 382px;
-//     top: 40px;
-//     bottom: 40px;
-
-
-//     // font-weight: 700;
-//     font-size: 15px;
-//     color: #666666;
-
-//     // display: flex;
-//     // align-items: center;
-//     // text-align: center;
-//     // text-decoration: underline 2px blue ;
-//     border-bottom: 3px solid blue;
-//     padding-bottom: 1px;
-
-// }
 
 // .product-quantity {
 //     width: 10%;
@@ -126,7 +98,7 @@
 // // }
 // .button-buy {
 
-    
+
 //     position: absolute;
 //     left: 1488px;
 //     right: 281px;
@@ -153,7 +125,7 @@
 
 
 
-    
+
 // }
 
 // // .product-header-div-left {
@@ -175,27 +147,137 @@
 // //     text-align: center;
 // // }
 
-// .product-discription-area {
-//     background-color: rgba(147, 167, 246, 0.122);
-//     padding-top: 100px;
-//     padding-bottom: 100px;
-// }
-
+.product-discription-area {
+    background-color:  #F5F7FF;
+    padding-bottom: 100px;
+}
+.product-discription-area-child{
+    padding-left: 30px;
+    
+}
 // .product-image-area {
 //     float: left;
 //     padding-top: 100px;
 // }
 
-// .product-company-name {
-//     font-weight: 600;
-//     color: rgba(128, 128, 128, 0.511);
-//     font-size: small;
-//     padding-bottom: 35px;
-// }
+.product-company-name {
+    font-weight: 400;
+    color: #A2A6B0;
+    font-size: 12px;
+    line-height: 18px;
+    padding-bottom: 35px;
+    margin-top: 64px;
+}
 
-// @media screen and(max-width: 600px) {
-//     .product-header-div-right {
-//         display: none;
-//     }
+.product-image-div{
+    // width: 565px;
+    padding-top: 80px;
+    padding-right: 181px;
+}
+@media screen and(max-width: 600px) {
+    .product-header-div-right {
+        // display: none;
+        display: flex;
+        // justify-content: space-evenly;
+    }
+    .product-image-div{
+        // float: top;
+        width: 375px;
+    }
+    .product-header-div{
+        // padding: 1px;
+        display: flex;
+        flex-direction: row;
+    
+    }
 
+}
+.header{
+    // opacity: 0.2;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.198);
+    // display: flex;
+    // align-items: center;
+    // text-align: center;
+    // vertical-align: middle
+    
+}
+.product-header-div {
+    height: 80px;
+    // position: relative;
+}
+.product-header {
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+//   text-decoration: underline 2px blue ;
+    border-bottom: 2px solid #0156FF;
+    padding-bottom: 1px;
+    color:  #666666;
+    margin-left: 114.7px;
+    // text-align: center;
+    
+    // margin-top: 20px;
+
+    // position: absolute;
+    // top: 50%;
+    // transform: translateY(-50%);
+}
+.product-header-div-right{
+    // display: flex;
+    // align-items: center;
+    // position: absolute;
+
+    // top: 50%;
+    // transform: translateY(-50%);
+    float: right;
+    // padding: 15px;
+    // top: 50%;
+}
+// .product-header-div-left{
+    // padding: 15px;
 // }
+.product-price{
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    margin-right: 20px;
+}
+.product-quantity{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    border-radius: 6px;
+    height: 50px;
+    width: 70px;
+    text-align: center;
+    background-color: #F5F7FF; ;
+    box-shadow: none;
+    border:none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    opacity: 1;
+    // display: flex;
+    // justify-content: space-evenly;
+}
+
+.button-buy{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: 20px;
+    width: 151px;
+    height: 50px;
+    border-radius: 50px;
+}
