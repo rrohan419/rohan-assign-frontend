@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpServiceService } from '../Services/http-service.service';
 
 @Component({
   selector: 'app-product-detail',
@@ -7,8 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDetailComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private http : HttpServiceService) { }
+  products:any;
   ngOnInit(): void {
+    this.http.getProducts().subscribe((data)=>{
+      this.products=data.data;
+      console.log(this.products);
+    })
+   
+  }
+
+  pay(id:any){
+    // const
   }
 }

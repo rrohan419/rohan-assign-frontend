@@ -1,8 +1,12 @@
 <div class="container-fluid header">
-  <div class="container product-header-div d-flex align-items-center justify-content-between">
+  <div
+    class="container product-header-div d-flex align-items-center justify-content-between"
+  >
     <span class="product-header">About Product</span>
-    <div class="product-header-div-right">
-      <span class="product-price"><b>Price : $299.00</b></span>
+    <div class="product-header-div-right" *ngFor="let product of products">
+      <span class="product-price"
+        ><b>Price : {{ product.price | currency: "USD" }}</b></span
+      >
       <input
         type="number"
         class="input-lg input-md product-quantity"
@@ -10,11 +14,14 @@
         max="3"
         value="1"
       />
-      <button class="btn btn-primary button-buy">Buy Now</button>
+      <button class="btn btn-primary button-buy" (click)="pay(product.productid)">Buy Now</button>
     </div>
   </div>
 </div>
-<div class="container-fluid product-details-area">
+<div
+  class="container-fluid product-details-area"
+  *ngFor="let product of products"
+>
   <div class="row">
     <div class="container-fluid col-md-7 col-lg-7 product-discription-area">
       <div class="row">
@@ -23,12 +30,14 @@
           class="col-md-8 col-lg-8 product-discription-area-child"
           style="text-align: left"
         >
-          <label class="product-company-name">APPLE PRODUCTS</label>
-          <h2>New Apple Airpods (3rd Generation)</h2>
+          <label class="product-company-name"
+            >{{ product.company_name | uppercase }} PRODUCTS</label
+          >
+          <h2>{{ product.name }}</h2>
           <label class="mt-3 mb-3">its magic remastered</label>
+          <label>{{ product.description }}</label>
           <ul>
-            <li>abcd abcd</li>
-            <li>abcd abcd</li>
+            <li>{{ product.description }}</li>
             <li>abcd abcd</li>
             <li>abcd abcd</li>
             <li>abcd abcd</li>
@@ -39,7 +48,9 @@
             <li>abcd abcd</li>
           </ul>
           <br />
-          <span style="font-weight: 300; color: #000000">SKU D5515AI</span>
+          <span style="font-weight: 300; color: #000000">{{
+            product.productId | uppercase
+          }}</span>
         </div>
       </div>
     </div>
