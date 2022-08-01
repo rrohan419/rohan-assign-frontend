@@ -8,13 +8,15 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { CheckoutComponent } from './html-pages/checkout.component';
 import { SuccessComponent } from './html-pages/success.component';
 import { RouterModule } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductDetailComponent,
     CheckoutComponent,
-    SuccessComponent
+    SuccessComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,20 +1,15 @@
+<div class="conatainer-fluid">
+  <app-navbar></app-navbar>
+</div>
 <div class="container-fluid header">
-  <div
-    class="container product-header-div d-flex align-items-center justify-content-between"
-  >
+  <div class="container product-header-div d-flex align-items-center justify-content-between">
     <span class="product-header">About Product</span>
     <div class="product-header-div-right" *ngFor="let product of products">
       <span class="product-price"
         ><b>Price : {{ product.price | currency: "USD" }}</b></span
       >
-      <input
-        type="number"
-        class="input-lg input-md product-quantity"
-        min="1"
-        max="3"
-        value="1"
-      />
-      <button class="btn btn-primary button-buy" (click)="pay(product.productid)">Buy Now</button>
+      <input type="number" class="input-lg input-md product-quantity" min="1" max="3" value="1" #quantity/>
+      <button class="btn btn-primary button-buy"  (click)="pay(product,quantity.value)">Buy Now</button>
     </div>
   </div>
 </div>
@@ -36,17 +31,6 @@
           <h2>{{ product.name }}</h2>
           <label class="mt-3 mb-3">its magic remastered</label>
           <label>{{ product.description }}</label>
-          <ul>
-            <li>{{ product.description }}</li>
-            <li>abcd abcd</li>
-            <li>abcd abcd</li>
-            <li>abcd abcd</li>
-            <li>abcd abcd</li>
-            <li>abcd abcd</li>
-            <li>abcd abcd</li>
-            <li>abcd abcd</li>
-            <li>abcd abcd</li>
-          </ul>
           <br />
           <span style="font-weight: 300; color: #000000">{{
             product.productId | uppercase
@@ -109,19 +93,15 @@
               <div class="carousel-caption d-md-block"></div>
             </div>
           </div>
-          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button> -->
         </div>
-        <!-- <img src="../../assets/image 10.png" alt=" loding image..."> -->
       </div>
+    </div>
+    <div class="product-header-div-right-small" *ngFor="let product of products">
+      <span class="product-price"
+        ><b>Price : {{ product.price | currency: "USD" }}</b></span
+      >
+      <input type="number" class="input-lg input-md product-quantity" min="1" max="3" value="1" #quantity/>
+      <button class="btn btn-primary button-buy"  (click)="pay(product,quantity.value)">Buy Now</button>
     </div>
   </div>
 </div>
