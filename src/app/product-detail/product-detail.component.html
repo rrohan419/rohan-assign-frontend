@@ -1,5 +1,5 @@
 <div class="conatainer-fluid">
- <app-navbar></app-navbar>
+  <app-navbar></app-navbar>
 </div>
 <div class="container-fluid header">
   <div
@@ -14,7 +14,6 @@
         type="number"
         class="input-lg input-md product-quantity"
         onkeydown="return false"
-
         min="1"
         max="3"
         value="1"
@@ -46,7 +45,7 @@
           >
           <h2>{{ product.name }}</h2>
           <label class="mt-3 mb-3 discription-sub">its magic remastered</label>
-          <ul [innerHtml]=" product.description " class="description"></ul>
+          <ul [innerHtml]="product.description" class="description"></ul>
           <br />
           <span style="font-weight: 300; color: #000000">{{
             product.productId | uppercase
@@ -114,7 +113,9 @@
     </div>
     <div class="container-fluid product-header-div-right-small">
       <div class="product-header-right-small" *ngFor="let product of products">
-        <span class="product-price"><b>Price : {{ product.price | currency: "USD" }}</b></span>
+        <span class="product-price"
+          ><b>Price : {{ product.price | currency: "USD" }}</b></span
+        >
         <input
           type="number"
           onkeydown="return false"
