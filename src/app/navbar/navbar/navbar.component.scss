@@ -57,7 +57,18 @@
         // width: 17px;
         // border : 2.4px solid #020202;
     }
-    
+    .nav-bar{
+    //     // display: flex;
+        position: fixed;
+        margin-top: 45px;
+    //     // top: 55;
+    //     //  left: 0;
+          z-index: 99;
+          
+    }
+    .nav-bar {
+        background-color: white;
+    }
     // .nav-laptop {
     //     margin:auto;
     // }

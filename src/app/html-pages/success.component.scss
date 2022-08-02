@@ -19,3 +19,9 @@
     border: 2px dotted;
     margin-top: 40px;
 }
+
+@media screen and(max-width: 991px) {
+    .success-container{
+        padding-top: 60px;
+    }
+}

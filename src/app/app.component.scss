@@ -1,17 +1,25 @@
 @import "src/variable.scss";
 
 .contact-info {
-    background: #020202;
-    height: 44px;
-    display: flex;
-    align-items: center;
-
+  background: #020202;
+  height: 44px;
+  display: flex;
+  align-items: center;
 }
 
 .contact-details {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    font-size: 12px;
-    font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+@media screen and(max-width: 991px) {
+  .contact-info {
+    position: fixed;
+    z-index: 1;
+  }
+  .routing-outlet-div{
+    padding: 0;
+  }
 }
